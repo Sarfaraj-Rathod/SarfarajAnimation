@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+.sarfaraj {
+  width: 100vw;
+  text-align: center;
+}
+.sarfaraj span {
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: #ffffff;
+  font-size: 100px;
+  text-shadow: 0 0px #f3bc23, 0 0px #f2aaaa;
+  transform: translate(0, 100%) rotate(4deg);
+  animation: jump 2.2s ease-in-out infinite;
+  display: inline-block;
+  font-family: "Titan One", cursive;
+  color: #fc6304;
+}
+.sarfaraj span:nth-child(1) {
+  animation-delay: 120ms;
+}
+.sarfaraj span:nth-child(2) {
+  animation-delay: 240ms;
+}
+.sarfaraj span:nth-child(3) {
+  animation-delay: 360ms;
+}
+.sarfaraj span:nth-child(4) {
+  animation-delay: 480ms;
+}
+.sarfaraj span:nth-child(5) {
+  animation-delay: 600ms;
+}
+.sarfaraj span:nth-child(6) {
+  animation-delay: 720ms;
+}
+.sarfaraj span:nth-child(7) {
+  animation-delay: 840ms;
+}
+.sarfaraj span:nth-child(8) {
+  animation-delay: 960ms;
+}
+.sarfaraj span:nth-child(9) {
+  animation-delay: 1080ms;
+}
+.sarfaraj span:nth-child(10) {
+  animation-delay: 1200ms;
+}
+.sarfaraj span:nth-child(11) {
+  animation-delay: 1320ms;
+}
+
+@keyframes jump {
+  33% {
+    text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+  }
+  50% {
+    transform: translate(0, 0) rotate(-4deg);
+    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+  }
+  66.67% {
+    text-shadow: 0 -60px #4074d5, 0 -150px #8fc0a9;
+  }
+}
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+@media screen and (max-height: 200px) {
+  .sarfaraj {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media screen and (max-width: 580px) {
+  .sarfaraj span {
+    font-size: 50px;
+}
+}
